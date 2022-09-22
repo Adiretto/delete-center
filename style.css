@@ -760,6 +760,19 @@ td {
     text-align: center;
 }
 
+.popup_body{
+    width: 700px;
+    height: auto;
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    padding: 20px;
+    font-size: 18px;
+    display: flex;
+    margin: 30px auto 30px auto;
+
+    padding: 30px 15px 30px 15px;
+}
 
 /* -------корявые исправления адаптива ---------- */
 @media (max-width:1280px) {
@@ -1007,11 +1020,14 @@ td {
     .deadline_text{
         font-size: 14px;
     }
-    .heroS-composition{
+    .heroS-composition {
         width: 200px;
         height: auto;
+
     }
-    
+    .popup_body{
+        width: 550px;
+    }
 }
 .header-sm{
     display: none;
@@ -1139,6 +1155,16 @@ td {
     .heroS-slogan{
         margin-top: -30px;
     }
+    .popup_body{
+        width: 500px;
+    }
+
+    #content_1,#content_2{
+        width: 230px;
+    }
+    .content{
+        width: 650px;
+    }
 }
 .newHero{
     display: none;
@@ -1240,6 +1266,9 @@ td {
     .benefit-row{
         width: 100%;
     }
+    .popup_body{
+        width: 500px;
+    }
 }
 .about-model-sm{
     display: none;
@@ -1323,6 +1352,15 @@ td {
         flex-direction: column;
         justify-items: center;
     }
+    .popup_body{
+        width: 500px;
+    }
+    #content_1,#content_2{
+        width: 220px;
+    }
+    .popup_body:last-child{
+        gap: 10px;
+    }
 }
 @media (max-width: 500px) {
     
@@ -1405,6 +1443,25 @@ td {
         width: 160px;
         margin-right: -160px;
     }
+    .popup_body{
+        width: 400px;
+    }
+    .popup_body:last-child {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        width: 400px;
+    }
+    #content_1,#content_2{
+        width: 400px;
+    }
+    .popup-close{
+        position: absolute;
+        top:20px;
+        right: 10px;
+    }
 }
 @media (max-width: 430px) {
     .newHero-slogan{
@@ -1434,6 +1491,17 @@ td {
         margin-top: 5px;
         margin-bottom: 5px;
     }
+    .popup_body{
+        width: 380px;
+    }
+    #content_1,#content_2{
+        width: 360px;
+    }
+    #popup-close-cosmetics{
+        position: absolute;
+        top:20px;
+        right: 10px;
+    }
 }
 @media (max-width:400px) {
     .benefit-item-descr{
@@ -1458,6 +1526,20 @@ td {
     }
     .extra_text{
         font-size: 12px;
+    }
+    .popup_body{
+        width: 300px;
+    }
+    #content_1,#content_2{
+        width: 300px;
+    }
+    #popup-close-cosmetics{
+        position: absolute;
+        top:20px;
+        right: 10px;
+    }
+    .content{
+        width: 300px;
     }
 }
 @media (max-width: 300px) {
@@ -1492,19 +1574,6 @@ td {
     width: 100%;
     height: 100%;
 }
-.popup_body{
-    width: 700px;
-    height: auto;
-    background: white;
-    border-radius: 20px;
-    position: relative;
-    padding: 20px;
-    font-size: 18px;
-    display: flex;
-    margin: 30px auto 30px auto;
-
-    padding: 30px 15px 30px 15px;
-}
 
 
 
@@ -1523,6 +1592,8 @@ td {
 .popup-close{
     cursor: pointer;
 }
+
+
 .content{
     display: flex;
     flex-direction: column;
